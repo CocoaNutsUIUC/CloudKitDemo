@@ -12,6 +12,9 @@
 		A4C0C1B81DB8391800783EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0C1B61DB8391800783EAB /* Main.storyboard */; };
 		A4C0C1BA1DB8391800783EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C0C1B91DB8391800783EAB /* Assets.xcassets */; };
 		A4C0C1BD1DB8391800783EAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C0C1BB1DB8391800783EAB /* LaunchScreen.storyboard */; };
+		A4C0C1C71DB83AAB00783EAB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C0C1C61DB83AAB00783EAB /* CloudKit.framework */; };
+		A4C0C1C91DB8724100783EAB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0C1C81DB8724100783EAB /* PostTableViewCell.swift */; };
+		A4C0C1CB1DB93A6200783EAB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C0C1CA1DB93A6200783EAB /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		A4C0C1B91DB8391800783EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4C0C1BC1DB8391800783EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4C0C1BE1DB8391800783EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C0C1C41DB8394600783EAB /* CloudKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitDemo.entitlements; sourceTree = "<group>"; };
+		A4C0C1C61DB83AAB00783EAB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A4C0C1C81DB8724100783EAB /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		A4C0C1CA1DB93A6200783EAB /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C0C1C71DB83AAB00783EAB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				A4C0C1B11DB8391800783EAB /* CloudKitDemo */,
 				A4C0C1B01DB8391800783EAB /* Products */,
+				A4C0C1C51DB83AAB00783EAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,25 @@
 		A4C0C1B11DB8391800783EAB /* CloudKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A4C0C1C41DB8394600783EAB /* CloudKitDemo.entitlements */,
 				A4C0C1B21DB8391800783EAB /* AppDelegate.swift */,
 				A4C0C1B41DB8391800783EAB /* ViewController.swift */,
+				A4C0C1C81DB8724100783EAB /* PostTableViewCell.swift */,
 				A4C0C1B61DB8391800783EAB /* Main.storyboard */,
 				A4C0C1B91DB8391800783EAB /* Assets.xcassets */,
 				A4C0C1BB1DB8391800783EAB /* LaunchScreen.storyboard */,
 				A4C0C1BE1DB8391800783EAB /* Info.plist */,
+				A4C0C1CA1DB93A6200783EAB /* Model.swift */,
 			);
 			path = CloudKitDemo;
+			sourceTree = "<group>";
+		};
+		A4C0C1C51DB83AAB00783EAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C0C1C61DB83AAB00783EAB /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +118,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = WK3VAH28UA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,6 +167,8 @@
 			files = (
 				A4C0C1B51DB8391800783EAB /* ViewController.swift in Sources */,
 				A4C0C1B31DB8391800783EAB /* AppDelegate.swift in Sources */,
+				A4C0C1C91DB8724100783EAB /* PostTableViewCell.swift in Sources */,
+				A4C0C1CB1DB93A6200783EAB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitDemo/CloudKitDemo.entitlements;
 				DEVELOPMENT_TEAM = WK3VAH28UA;
 				INFOPLIST_FILE = CloudKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitDemo/CloudKitDemo.entitlements;
 				DEVELOPMENT_TEAM = WK3VAH28UA;
 				INFOPLIST_FILE = CloudKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
