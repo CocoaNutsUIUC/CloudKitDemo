@@ -4,9 +4,9 @@
 - We are going to build a simple photo app called **Nutstagram** that allows you to upload photos from Camera and store them in iCloud.
 - Prerequisit: `UITableView` (We won't go over too much details on how UITableView works, you can check out our previous tutorials on it if needed)
 - Table of Content
-  - [Start a New Project](#markdown-header-starting-a-new-project)
-  - [CloudKit Overview](#markdown-header-cloudkit-overview)
-  - [CloudKit Dashboard](#markdown-header-cloudkit-dashboard)
+  - [Start a New Project](#starting-a-new-project)
+  - [CloudKit Overview](#cloudkit-overview)
+  - [CloudKit Dashboard](#cloudkit-dashboard)
   - ​
 
 ---
