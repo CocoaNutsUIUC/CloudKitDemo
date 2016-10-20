@@ -74,11 +74,11 @@
 
   - Before we start, let's first hook together some UI for the display of photos and a button for uploading photos! 
   - Drag ***Navigation Bar*** and insert it on the top of our ***View Controller***, and double click to name it *"Today's Post*".![Screen Shot 2016-10-20 at 3.57.10 PM](/Images/Screen Shot 2016-10-20 at 3.57.10 PM.png) 
-  - Add the following three constraints on our ***Navegation Bar***![Screen Shot 2016-10-20 at 4.00.17 PM](/Images/Screen Shot 2016-10-20 at 4.00.17 PM.png)
+  - Add the following three constraints on our ***Navegation Bar***! ![Screen Shot 2016-10-20 at 5.26.38 PM](/Images/Screen Shot 2016-10-20 at 5.26.38 PM.png)
   - Now add two ***Bar Button Item*** onto each side of our ***Navigation Bar*** like this: ![Screen Shot 2016-10-20 at 4.02.14 PM](/Images/Screen Shot 2016-10-20 at 4.02.14 PM.png)
   -  Click on the right ***Button*** and under the *attribute inspector*, select ***"Add"*** under ***System Item***. Similarly, do the same thing for the left ***Button*** and select ***"Refresh"*** under ***System Item***.  ![Screen Shot 2016-10-20 at 4.06.52 PM](/Images/Screen Shot 2016-10-20 at 4.06.52 PM.png)The result should look like something like this.
-  - Now insert a ***Table View***: ![Screen Shot 2016-10-20 at 4.08.21 PM](/Images/Screen Shot 2016-10-20 at 4.08.21 PM.png)and create the following constrains: ![Screen Shot 2016-10-20 at 4.09.25 PM](/Images/Screen Shot 2016-10-20 at 4.09.25 PM.png)
-  - Update your frames and it should look like this:  ![Screen Shot 2016-10-20 at 4.10.52 PM](/Images/Screen Shot 2016-10-20 at 4.10.52 PM.png)
+  - Now insert a ***Table View***: ![Screen Shot 2016-10-20 at 4.08.21 PM](/Images/Screen Shot 2016-10-20 at 4.08.21 PM.png)and create the following four constrains: ![Screen Shot 2016-10-20 at 5.28.25 PM](/Images/Screen Shot 2016-10-20 at 5.28.25 PM.png)
+  - Update your frames and it should look like this:![Screen Shot 2016-10-20 at 5.28.52 PM](/Images/Screen Shot 2016-10-20 at 5.28.52 PM.png)
   - Now, insert a ***Table View Cell*** inside our ***Table View***, name it *"Post"*
   - You can make the ***Post*** cell a little bit higher so it's easier for us to arrange stuffs inside it (Don't worry, we're going to resize the row height in code):  ![Screen Shot 2016-10-20 at 4.12.36 PM](/Images/Screen Shot 2016-10-20 at 4.12.36 PM.png)
   - Now insert a ***ImageView*** and a ***Label***:  ![Screen Shot 2016-10-20 at 4.15.07 PM](/Images/Screen Shot 2016-10-20 at 4.15.07 PM.png)
