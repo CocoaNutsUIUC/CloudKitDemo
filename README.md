@@ -3,6 +3,11 @@
 - This tutorial will teach you the most basic components of Apple's ***CloudKit***.
 - We are going to build a simple photo app called **Nutstagram** that allows you to upload photos from Camera and store them in iCloud.
 - Prerequisit: `UITableView` (We won't go over too much details on how UITableView works, you can check out our previous tutorials on it if needed)
+- Table of Content
+  - [Start a New Project](#markdown-header-starting-a-new-project)
+  - [CloudKit Overview](#markdown-header-cloudkit-overview)
+  - [CloudKit Dashboard](#markdown-header-cloudkit-dashboard)
+  - ​
 
 ---
 
@@ -90,6 +95,10 @@
   - Go to ***Main.storyboard*** again, in the left side panel, control drag ***Table View*** to ***View Controller*** twice and check on ***dataSource*** and ***delegate***:![Screen Shot 2016-10-20 at 4.33.08 PM](/Images/Screen Shot 2016-10-20 at 4.33.08 PM.png)
   - One last thing, create an IBOutlet for ***Table View*** in our ***ViewController.swift*** using the name *"tableView"*:  ![Screen Shot 2016-10-20 at 4.35.47 PM](/Images/Screen Shot 2016-10-20 at 4.35.47 PM.png)
   - Good, now we are ready to start coding!
+
+---
+
+### The Code
 
 
 
