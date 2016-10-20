@@ -16,7 +16,7 @@
 
 1. **Create a new Xcode project** by clicking on ***Create a new Xcode project*** in the Xcode Lunch windows
 2. Select ***Single View Application***
-3. ![Screen Shot 2016-10-20 at 3.18.58 PM](/Images/Screen Shot 2016-10-20 at 3.18.58 PM.png)Give the project a name, and click on ***Next***.
+3. Give the project a name, and click on ***Next***.![Screen Shot 2016-10-20 at 3.18.58 PM](/Images/Screen Shot 2016-10-20 at 3.18.58 PM.png)
 4. Click on ***Create***.
 
 ---
