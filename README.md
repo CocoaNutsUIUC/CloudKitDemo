@@ -67,12 +67,11 @@
     - **Private Data**: the database for private data
     - **Admin**: this provides the ability to configure dashboard permissions for your development team.
   - In this tutorial, we will create one Record Type called ***Post***
-
-  1. Go to ***Record Types*** under ***Schema***
-  2. Click on the little **"+"** sign, name it *"UserPost"*, and create two fields:
-     1. field name *"Date"*, field type *String*
-     2. field name *"Image"* with field type *Asset*
-  3. It should look something like this:  ![Screen Shot 2016-10-20 at 3.46.39 PM](/Images/Screen Shot 2016-10-20 at 3.46.39 PM.png)Once this is done, you now have a template for the basic database structure of our app.
+  - Go to ***Record Types*** under ***Schema***
+  - Click on the little **"+"** sign, name it *"UserPost"*, and create two fields:
+    1. field name *"Date"*, field type *String*
+    2. field name *"Image"* with field type *Asset*
+  - It should look something like this:  ![Screen Shot 2016-10-20 at 3.46.39 PM](/Images/Screen Shot 2016-10-20 at 3.46.39 PM.png)Once this is done, you now have a template for the basic database structure of our app.
 
   ---
 
