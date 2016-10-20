@@ -7,7 +7,8 @@
   - [Start a New Project](#starting-a-new-project)
   - [CloudKit Overview](#cloudkit-overview)
   - [CloudKit Dashboard](#cloudkit-dashboard)
-  - ​
+  - [Basic UI Setup](#basic-ui-setup)
+  - [The Code for UI](#the-code-for-ui)
 
 ---
 
@@ -60,18 +61,18 @@
   ### CloudKit Dashboard
 
   - Go to https://icloud.developer.apple.com/dashboard/ and log in using a valid developer's account (again, use *sstevenshang@gamil.com* is you don't have one)
-  - As you can see, there are four sections:
+  - As you can see, there are five sections:
     - **Schema**: this is where we store our ***Record Type***
-    - Public Data: the database for public data
-    - Private Data: the database for private data
-    - Admin: this provides the ability to configure fashboard permissions
+    - **Public Data**: the database for public data; you can perform add, search, or other operations here.
+    - **Private Data**: the database for private data
+    - **Admin**: this provides the ability to configure dashboard permissions for your development team.
   - In this tutorial, we will create one Record Type called ***Post***
 
   1. Go to ***Record Types*** under ***Schema***
-  2. Click on the little ***Plus Sign***, name it "UserPost", and create two fields:
-     1. "Date" with field type String
-     2. "Image" with field type Image
-  3. It should look something like this:  ![Screen Shot 2016-10-20 at 3.46.39 PM](/Images/Screen Shot 2016-10-20 at 3.46.39 PM.png)Once this is done, you now have a template for the basic data structure of our app.
+  2. Click on the little **"+"** sign, name it *"UserPost"*, and create two fields:
+     1. field name *"Date"*, field type *String*
+     2. field name *"Image"* with field type *Asset*
+  3. It should look something like this:  ![Screen Shot 2016-10-20 at 3.46.39 PM](/Images/Screen Shot 2016-10-20 at 3.46.39 PM.png)Once this is done, you now have a template for the basic database structure of our app.
 
   ---
 
@@ -90,7 +91,9 @@
   - Add the following constraints on ***Image view***: ![Screen Shot 2016-10-20 at 4.16.13 PM](/Images/Screen Shot 2016-10-20 at 4.16.13 PM.png)Note that we want the constraint ***Aspect Ratio*** because we want the photo to be a squere. However right now, the ratio if off, and we need to go to the ***size inspector*** to change it!  ![Screen Shot 2016-10-20 at 4.19.26 PM](/Images/Screen Shot 2016-10-20 at 4.19.26 PM.png)Update the ***multiplier*** to *"1:1"*.
   - Add the following constraint on **Label**:  ![Screen Shot 2016-10-20 at 4.22.18 PM](/Images/Screen Shot 2016-10-20 at 4.22.18 PM.png)
   - Okay, we have our basic UIs ready, now let's go create a new ***CocoaTouch Class*** file and name it ***PostTableViewCell*** under the subclass ***UITableViewCell***: ![Screen Shot 2016-10-20 at 4.26.09 PM](/Images/Screen Shot 2016-10-20 at 4.26.09 PM.png)
-  - Next, go to our ***Main.storyboard***, under ***Identity inspector***, set Class to ***"PostTableViewCell"***
+  - Next, go to our ***Main.storyboard***, click on our ***TableViewCell***. 
+    - Under ***Identity inspector***, set ***Class*** to *"PostTableViewCell"*
+    - Under ***Attribute inspector***, set ***Identifier*** to *"Post"* (**important**!)
   - Create the following IBOutlet in ***PostTableViewCell.swift*** by the name *"postImageView"* and *"dateLabel"*: ![Screen Shot 2016-10-20 at 4.29.30 PM](/Images/Screen Shot 2016-10-20 at 4.29.30 PM.png)(to create IBOutlet, control drag from the view to the class in the Assisstant Editor)
   - Go to ***Main.storyboard*** again, in the left side panel, control drag ***Table View*** to ***View Controller*** twice and check on ***dataSource*** and ***delegate***:![Screen Shot 2016-10-20 at 4.33.08 PM](/Images/Screen Shot 2016-10-20 at 4.33.08 PM.png)
   - One last thing, create an IBOutlet for ***Table View*** in our ***ViewController.swift*** using the name *"tableView"*:  ![Screen Shot 2016-10-20 at 4.35.47 PM](/Images/Screen Shot 2016-10-20 at 4.35.47 PM.png)
@@ -98,11 +101,9 @@
 
 ---
 
-### The Code
+### The Code for UI
 
-
-
-
+- ​
 
 
 
