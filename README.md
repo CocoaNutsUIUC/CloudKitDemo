@@ -103,7 +103,10 @@
 
 ### The Code for UI
 
-- ​
+Go to ***ViewController.swfit*** and put 
 
-
-
+```swift
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.estimatedRowHeight = 450
+```
+inside `viewDidLoad()`. This will tell the `tablewView` to resize tiself based on the content inside the cell. However, you must provide an estimate of how high the row'd be in order for it to work, and here we estimates it to be 450.
