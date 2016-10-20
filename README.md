@@ -47,14 +47,14 @@
 
 - **Entitlement**
 
-  - Unfortunaely, you have to be enrolled in Apple's Developer Program in order to use CloudKit.
+  - Unfortunately, you have to be enrolled in Apple's Developer Program in order to use CloudKit.
   - But that's okay. If you don't have a developer's account, just sign in using these:
     - ***username: sstevenshang@gmail.com***
     - ***password: CloudKitDemo2016***
-  - Note: this step is very important, you must have a valid developer account to continue development
-  - Note: the iCloud container's name should be `iCloud.come.<your domain>.CloudKitDemo`
+      - Note: this step is very important, you must have a valid developer account to develop with CloudKit!
+  - Note: the iCloud container's name should be `iCloud.come.<your domain>.CloudKitDemo`, if you are using my account, it should be `iCloud.come.sstevenshang.CloudKitDemo`
   - Enable CloudKit by clicking on the project, under ***Capabilities***, turn on ***iCloud*** and check out ***CloudKit*** under ***Services***:  ![Screen Shot 2016-10-20 at 3.48.30 PM](/Images/Screen Shot 2016-10-20 at 3.48.30 PM.png)It should look like this.
-  - Now you're ready to dive into CloudKit
+  - Now you're ready to dive into CloudKit.
 
   ---
 
